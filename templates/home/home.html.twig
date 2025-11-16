@@ -33,6 +33,14 @@
             </div>
         </section>
 
+        <section>
+            <ul>
+                {% for test in tests %}
+                    <li>{{ test.name }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+
         <section class="features">
             <h2>Pourquoi choisir Gestor ?</h2>
             <div class="grid">
