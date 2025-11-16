@@ -10,6 +10,9 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: Analyse code quality
+              run: php vendor/bin/phpstan analyse --error-format=github
+
             - name: Checkout repository
               uses: actions/checkout@v3
 

@@ -1,0 +1,22 @@
+includes:
+	- /Users/hamid/Documents/Lab/gestor/phpstan.neon
+	- /Users/hamid/Documents/Lab/gestor/vendor/twigstan/twigstan/config/phpstan.collect-php-render-points.neon
+
+parameters:
+	tmpDir: /Users/hamid/Documents/Lab/gestor/.twigstan/phpstan
+	resultCachePath: /Users/hamid/Documents/Lab/gestor/.twigstan/phpstan/collect-php-render-points.resultCache.php
+	paths!:
+		- /Users/hamid/Documents/Lab/gestor/src/Controller/HomeController.php
+		- /Users/hamid/Documents/Lab/gestor/src/Kernel.php
+
+	scanDirectories: []
+	twigstan:
+		twigEnvironmentLoader: /Users/hamid/Documents/Lab/gestor/twig-loader.php
+		analysisResultJsonFile: /Users/hamid/Documents/Lab/gestor/.twigstan/phpstan/collect-php-render-points.result.json
+		mode: collect-php-render-points
+		debugMode: false
+
+	level: null
+	customRulesetUsed: true
+
+services: []
