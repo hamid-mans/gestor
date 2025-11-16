@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestor – La sérénité au cœur de votre logistique{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/home.css') }}">
+{% endblock %}
+
+{% block body %}
+    <header>
+        <img src="{{ asset('images/gestor.png') }}" alt="Logo Gestor">
+
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Le logiciel</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <h1 class="title">Simplifiez la gestion de vos stocks avec <span>Gestor</span></h1>
+                <p class="subtitle">Transformer la logistique complexe en sérénité durable</p>
+                <a href="#" class="cta">Découvrir le logiciel</a>
+            </div>
+
+            <div class="intro-image">
+                <img src="{{ asset('images/stock1.jpg') }}" alt="Interface Gestor">
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Pourquoi choisir Gestor ?</h2>
+            <div class="grid">
+                <div class="feature">
+                    <img src="{{ asset('images/icon-dashboard.png') }}" alt="Suivi en temps réel">
+                    <h3>Suivi en temps réel</h3>
+                    <p>Surveillez vos stocks, commandes et réapprovisionnements en un coup d’œil.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="{{ asset('images/icon-gear.png') }}" alt="Automatisation">
+                    <h3>Automatisation</h3>
+                    <p>Automatisez les tâches répétitives et gagnez un temps précieux chaque jour.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="{{ asset('images/icon-cloud.png') }}" alt="Accessibilité">
+                    <h3>Accessibilité</h3>
+                    <p>Accédez à vos données depuis n’importe où, en toute sécurité.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Prêt à simplifier votre logistique ?</h2>
+            <a href="#" class="cta-large">Demandez une démo</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Gestor – Tous droits réservés.</p>
+    </footer>
+{% endblock %}
