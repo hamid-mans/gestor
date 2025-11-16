@@ -14,6 +14,8 @@ services:
         container_name: gestor_nginx
         ports:
             - "8000:80"
+        env_file:
+            - .env
         volumes:
             - .:/var/www/html
             - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
