@@ -7,8 +7,10 @@ html, body {
 }
 
 :root {
-    --color-green: rgb(0, 191, 99);
+    --color-green: rgb(0, 60, 191);
     --color-green-fond: rgb(96, 145, 122);
     --color-text-dark: #333;
     --color-light-gray: #f8f8f8;
 }
+
+/* rgb(0, 191, 99) */
