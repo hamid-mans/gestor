@@ -2,7 +2,7 @@ name: Docker Rebuild on Main
 
 on:
     workflow_run:
-        workflows: ["CodeQuality"]
+        workflows: ["Code Quality"]
         types:
             - completed
 
