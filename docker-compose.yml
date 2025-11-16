@@ -42,6 +42,20 @@ services:
         volumes:
             - db_data:/var/lib/mysql
 
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        container_name: gestor_phpmyadmin
+        environment:
+            PMA_HOST: bdd
+            PMA_USER: root
+            PMA_PASSWORD: root
+        ports:
+            - "8001:80"
+        depends_on:
+            - bdd
+        networks:
+            - symfony
+
 networks:
     symfony:
 
